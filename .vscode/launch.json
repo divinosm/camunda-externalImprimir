@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<exTask02>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.gov.mt.intermat.Application",
+            "projectName": "exTask02",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Modelo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cbe557f1-bc4a-40e6-834f-ff4f7335766c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="nome" class="java.lang.String"/>
+	<parameter name="cpf" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from address]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="550" height="71" backcolor="#E1E4F2" uuid="59dba75f-5565-4944-8336-24ac6b30779c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="100" y="10" width="331" height="20" uuid="d29de069-bcb5-4f55-b67f-e28c365a6203"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GOVERNO DO ESTADO DE MATO GROSSO]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="5" width="50" height="50" uuid="234f5a59-9db6-4a5b-a854-14505f3a472f"/>
+				<imageExpression><![CDATA["C:/Users/Divino/Pictures/Brasão_de_Mato_Grosso.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="100" y="30" width="331" height="20" uuid="0a0d0da5-0ba7-4c1b-8755-8e569dad796d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSTITUTO DE TERRAS DE MATO GROSSO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="51" width="331" height="20" uuid="092f2770-4f87-4a32-a039-f13349de3939"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTERMAT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="439" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="30" width="550" height="390" uuid="09e64b4e-ade2-4a91-a8a4-05fbd35eeb60"/>
+				<textElement textAlignment="Justified">
+					<font size="14"/>
+					<paragraph firstLineIndent="30"/>
+				</textElement>
+				<text><![CDATA[				O Município de Terra Nova do Norte – MT, através do Prefeito Municipal considerando a Lei Municipal n° 839/2008 e o Governador do Estado de Mato Grosso como interveniente Anuente, através do Instituto de Terras de Mato grosso – INTERMAT, Autarquia Estadual criada pela Lei n° 3681 de 01 de dezembro de 1975 e pelo Decreto n° 775 de 23 de novembro de 1976, inscrita no CNPJ/T sob o n° 03.831.971/0001-71, com sede na Capital , neste ato representado pelo seu Presidente, com fundamento na Lei 8.221/204, regulamentada pelo Decreto 8.187/2006 e no Convênio 717699/2009, e após regular tramitação do processo administrativo 134/2021, por este ato, OUTORGAM o Título Definitivo de Propriedade a ......................................................................................................... , portador do CPF  ...................................., referente ao Lote 10, da Quadra 02, com Área 10.000 m2, com as seguintes dimensões e confrontações: Frente: 40,00m com a Rua E; Fundo de 40,00m com o lote 15; Lado Direito: 250,00m com o Lote 09; Lado Esquerdo: 250,00m com os Lotes 11 e 12, no Loteamento João Paulo II, localizado no município de Terra Nova do Norte – MT, e a CASA de 73m2. O imóvel encontra-se devidamente registrado sob a matrícula n° 1243/2022, livro 2, do Cartório do 1°ofício da Comarca de Terra Nova do Norte-MT, onde deverá ser obrigatoriamente transcrita a CLÁUSULA DE REVERSÃO: o Donatário não pode alugar, ceder, emprestar ou onerar em favor de terceiros o imóvel doados pelo período equivalente a 5(cinco) anos, sob pena de a presente doação resolver-se, revertendo ao patrimônio dos Doadores os bens ora doados. O presente título é assinado em 2(duas) vias de igual teor, constituindo parte integrante, a Planta Memorial Descritivo do lote. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="210" width="135" height="30" uuid="29273b77-ccb8-4064-b190-67afd06d0ec2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="190" width="400" height="30" uuid="43d19b05-a155-4b09-a7c9-36809d822e79"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="-15" width="552" height="28" uuid="b3aebdb1-2d45-45ce-91af-105f58e8e3c6"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TÍTULO DEFINTIVO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="180" height="30" uuid="2e4e120f-5dfd-4ea7-8d8b-a76b1d48debf"/>
+				<text><![CDATA[Prefeito Municipal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="0" width="190" height="30" uuid="418cb444-f57d-4855-9463-5f2fa4ddffca"/>
+				<text><![CDATA[Governador do Estado de MT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="50" width="240" height="30" uuid="dc51c9f5-b5e4-423f-8fea-54071e7cec5a"/>
+				<text><![CDATA[Presidente do Instituto de Terras de Mato Grosso
+INTERMAT
+]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="-5" y="10" width="550" height="40" uuid="3406f8c2-0203-4f81-8d43-4594b09b06e1"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[INSTITUTO DE TERRAS DE MATO GROSSO
+Av. B S/Nº Edificio Ceres / 1º Andar
+Centro Político Administrativo/CPA - Cuiabá/MT
+Telefone (065) 3613-6169 
+
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
